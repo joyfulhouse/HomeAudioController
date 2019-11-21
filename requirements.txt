@@ -1,0 +1,2 @@
+flask>=1.1.1
+pychromecast>=4.1.0
