@@ -47,7 +47,7 @@ while True:
       currStatus = 'off'
 
     if cast.status != currStatus:
-      print("zone" + str(cast.zone) + ":power_on")
+      print("zone" + str(cast.zone) + ":power_" + currStatus)
       reqUrl = cast.baseUrl + str(cast.zone) + '/power/' + currStatus
       with urllib.request.urlopen(reqUrl) as response:
         resp = response.read()
